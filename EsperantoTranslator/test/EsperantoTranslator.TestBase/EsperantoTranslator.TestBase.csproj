@@ -9,6 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NltkNet" Version="1.0.14" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.0.1" />
+    <PackageReference Include="TensorFlow.NET" Version="0.110.0" />
     <PackageReference Include="Volo.Abp.TestBase" Version="7.2.3" />
     <PackageReference Include="Volo.Abp.Autofac" Version="7.2.3" />
     <PackageReference Include="Volo.Abp.Authorization" Version="7.2.3" />
