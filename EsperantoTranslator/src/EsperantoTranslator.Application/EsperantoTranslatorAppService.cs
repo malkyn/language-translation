@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using EsperantoTranslator.Localization;
-using IronPython.Modules;
 using Volo.Abp.Application.Services;
 
 namespace EsperantoTranslator;
@@ -26,13 +24,14 @@ public abstract class EsperantoTranslatorAppService : ApplicationService
         {
             string s;
             while ((s = reader.ReadLine()) != null)
-            {
+            {                               
                 sentences.Add(s.Trim());
             }
         }
 
         return sentences;
     }
+    //Comentário para subir nada no git.
 
     public static
         Tuple<List<List<int>>, List<List<int>>, Dictionary<string, int>, Dictionary<int, string>, List<string>, Dictionary<string, int>, Dictionary<int, string>, Tuple<List<string>>> CreateDataset(List<string> ptbrSentences,
